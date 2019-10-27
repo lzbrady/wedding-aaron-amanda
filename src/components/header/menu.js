@@ -9,7 +9,7 @@ class Menu extends React.Component {
     super(props)
 
     this.state = {
-      open: window.innerWidth >= 768,
+      open: false,
     }
   }
 
