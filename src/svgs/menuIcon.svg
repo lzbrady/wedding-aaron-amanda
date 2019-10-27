@@ -1,0 +1,38 @@
+<svg
+  width="45"
+  height="45"
+  viewBox="0 0 50 50"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+>
+  <circle
+    cx="25"
+    cy="25"
+    r="23"
+    stroke="black"
+    stroke-width="2"
+    fill="none"
+  />
+  <line
+    x1="15"
+    y1="18"
+    x2="35"
+    y2="18"
+    style="stroke:black;stroke-width:3"
+  />
+  <line
+    x1="15"
+    y1="25"
+    x2="35"
+    y2="25"
+    style="stroke:black;stroke-width:3"
+  />
+  <line
+    x1="15"
+    y1="32"
+    x2="35"
+    y2="32"
+    style="stroke:black;stroke-width:3"
+  />
+  MENU
+</svg>

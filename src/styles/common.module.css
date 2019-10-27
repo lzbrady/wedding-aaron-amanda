@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Cookie|Lobster&display=swap");
+
+.link {
+  color: #de98b2;
+}
+
+.fadedContainer {
+  background: linear-gradient(rgba(255, 255, 255, 0.6) 0%, #ffffff 25vh);
+  text-align: center;
+  border-radius: 8px;
+  margin: 0px auto;
+  margin-top: 20vh;
+  padding: 20px;
+  min-height: calc(60vh - 80px);
+}
+
+.pageTitle {
+  text-align: center;
+  font-weight: normal;
+  color: #6d8a84;
+  font-family: "Cookie", cursive;
+  padding: 10px 0px 20px;
+  font-size: 3rem;
+}
+
+.pageInnerTitle {
+  text-align: center;
+  font-weight: normal;
+  color: #161616;
+  font-family: "Cookie", cursive;
+  padding: 10px 0px 20px;
+  font-size: 3rem;
+}
+
+.accentText {
+  font-family: "Lobster", cursive;
+}
+
+.fullWidth {
+  height: 50vh;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 5;
+}
+
+.textOverlay {
+  position: absolute;
+  font-size: 40px;
+  text-align: center;
+  background: rgba(239, 211, 215, 0.65);
+  color: black;
+  padding: 5px;
+  top: 29vh;
+  left: 0;
+  right: 0;
+  font-family: "Cookie", cursive;
+}
