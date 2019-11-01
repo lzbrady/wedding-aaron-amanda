@@ -37,7 +37,7 @@ const Gallery = () => (
             }}
           >
             <Layout>
-              <SEO title="Page two" />
+              <SEO title="Gallery" />
               <div className={commonStyles.fadedContainer}>
                 <h1 className={commonStyles.pageTitle}>Our Gallery</h1>
                 <GalleryFull />

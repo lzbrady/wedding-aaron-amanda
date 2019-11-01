@@ -37,7 +37,7 @@ const Registry = () => (
             }}
           >
             <Layout>
-              <SEO title="Page two" />
+              <SEO title="Registry" />
               <div className={commonStyles.fadedContainer}>
                 <h1 className={commonStyles.pageTitle}>Our Registry</h1>
                 <p>

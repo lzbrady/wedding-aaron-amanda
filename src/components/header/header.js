@@ -34,6 +34,10 @@ class Header extends React.Component {
     window.addEventListener("scroll", this.scrollListener)
   }
 
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.scrollListener)
+  }
+
   render() {
     return (
       <StyledHeader

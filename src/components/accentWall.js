@@ -45,8 +45,6 @@ const AccentWall = props => (
           }
         })()
 
-        console.log("log", props)
-
         return (
           <BackgroundImage
             Tag="section"

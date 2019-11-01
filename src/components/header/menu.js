@@ -21,16 +21,16 @@ class Menu extends React.Component {
           {this.state.open && <MenuClose>X</MenuClose>}
         </MenuButton>
         <MenuItems open={this.state.open ? 1 : 0}>
-          <MenuLink dark to="/">
+          <MenuLink to="/">
             Home
           </MenuLink>
-          <MenuLink dark to="/location/">
+          <MenuLink to="/location/">
             Location
           </MenuLink>
-          <MenuLink dark to="/registry/">
+          <MenuLink to="/registry/">
             Registry
           </MenuLink>
-          <MenuLink dark to="/gallery/">
+          <MenuLink to="/gallery/">
             Gallery
           </MenuLink>
         </MenuItems>

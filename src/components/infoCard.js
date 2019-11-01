@@ -34,7 +34,6 @@ const InfoCard = ({ children, title, site, phone, icon }) => (
 )
 
 function getCardIcon({ icon }) {
-  console.log("Icon", icon)
   switch (icon) {
     case "clock":
       return <Clock style={{ marginBottom: "25px" }} />
@@ -95,7 +94,7 @@ const CardChildren = styled.div`
 `
 
 InfoCard.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   title: PropTypes.string.isRequired,
   site: PropTypes.string,
   phone: PropTypes.string,

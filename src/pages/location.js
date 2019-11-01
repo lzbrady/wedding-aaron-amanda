@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-import InfoCard from "../components/infoCard"
 import Layout from "../components/layout"
 import LocationCards from "../components/location/locationCards"
 import ActivityCards from "../components/location/activityCards"
@@ -49,7 +48,7 @@ const Location = () => (
             }}
           >
             <Layout>
-              <SEO title="Page two" />
+              <SEO title="Location" />
               <div className={commonStyles.fadedContainer}>
                 <h1 className={commonStyles.pageTitle}>Location</h1>
                 <p style={{ marginBottom: "0px" }}>
