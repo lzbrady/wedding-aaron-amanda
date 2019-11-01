@@ -3,6 +3,6 @@
 }
 
 .galleryWrapper img {
-  width: auto;
+  width: auto!important;
   max-height: 90vh;
 }
