@@ -21,6 +21,9 @@ class Menu extends React.Component {
           {this.state.open && <MenuClose>X</MenuClose>}
         </MenuButton>
         <MenuItems open={this.state.open ? 1 : 0}>
+          <MenuLink dark to="/">
+            Home
+          </MenuLink>
           <MenuLink dark to="/location/">
             Location
           </MenuLink>
@@ -57,7 +60,6 @@ const MenuButton = styled.button`
 
 const MenuOpen = styled(props => <MenuIcon {...props} />)`
   margin-bottom: 0px;
-  background-color: white;
   border-radius: 100%;
   transition: all 200ms linear;
 
@@ -72,11 +74,9 @@ const MenuClose = styled.p`
   position: absolute;
   top: 3px;
   right: 6px;
-  background: white;
   border: none;
   font-size: 20px;
   font-weight: bold;
-  border: 2px solid black;
   border-radius: 100%;
   width: 43px;
   height: 43px;
@@ -111,7 +111,6 @@ const MenuItems = styled.div`
 
 const menuLinkStyle = css`
   color: white;
-  background-color: #6f8c86;
   font-size: 1rem;
   font-size: 1rem;
   font-weight: normal;

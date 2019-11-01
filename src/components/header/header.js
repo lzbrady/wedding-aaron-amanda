@@ -38,7 +38,7 @@ class Header extends React.Component {
     return (
       <StyledHeader
         style={{
-          backgroundColor: "rgb(110, 139, 133)",
+          backgroundColor: "rgba(110, 139, 133, 0.93)",
           boxShadow: `${this.state.shadowColor} 0px 4px 8px 0px`,
         }}
       >

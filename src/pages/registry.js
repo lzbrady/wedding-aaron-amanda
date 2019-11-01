@@ -14,7 +14,7 @@ const Registry = () => (
     <StaticQuery
       query={graphql`
         query {
-          desktop: file(relativePath: { eq: "bg/registry-bg.jpg" }) {
+          desktop: file(relativePath: { eq: "bg/accent3-bg.jpg" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 4160) {
                 ...GatsbyImageSharpFluid_withWebp
@@ -51,6 +51,7 @@ const Registry = () => (
                     href="https://www.myregistry.com/giftlist/aaron-and-amanda"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={commonStyles.link}
                   >
                     My Registry
                   </a>

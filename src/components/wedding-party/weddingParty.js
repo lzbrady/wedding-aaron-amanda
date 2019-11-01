@@ -69,7 +69,7 @@ const WeddingParty = () => (
       />
       <WeddingPartyPerson
         name="Austin Bartee"
-        title="Goomsman"
+        title="Groomsman"
         desc="Austin Bartee is...lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
       />
     </WeddingPartyWrapper>

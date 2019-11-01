@@ -12,20 +12,29 @@ const ActivityCards = () => (
       Activities
     </OptionsTitle>
     <OptionsWrapper>
-      <ActivityCard />
-      <ActivityCard />
-      <ActivityCard />
-      <ActivityCard />
+      <ActivityCard
+        title="Outdoors"
+        link="https://www.visitgalena.org/things-to-do/outdoor-recreation/"
+        icon="outdoors"
+      />
+      <ActivityCard
+        title="Shopping"
+        link="https://www.visitgalena.org/things-to-do/shopping/"
+        icon="bags"
+      />
+      <ActivityCard
+        title="Dining"
+        link="https://www.visitgalena.org/things-to-do/cuisine/"
+        icon="dining"
+      />
     </OptionsWrapper>
-    <a
+    <SeeAllButton
       href="https://www.visitgalena.org/"
       target="_blank"
       rel="noopener noreferrer"
-      className={commonStyles.link}
-      style={{ fontSize: "20px" }}
     >
       See All
-    </a>
+    </SeeAllButton>
   </GuestAccomodationsWrapper>
 )
 
@@ -49,4 +58,25 @@ const GuestAccomodationContainer = styled.div`
 const AddressLabel = styled.p`
   margin-bottom: 0px;
 `
+
+const SeeAllButton = styled.a`
+  display: block;
+  background: #96bdc4;
+  padding: 7px;
+  width: 175px;
+  text-decoration: none;
+  border-radius: 13px;
+  margin: 5px auto;
+  transition: all 100ms linear;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+
+  :hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px #787878;
+  }
+`
+
 export default ActivityCards

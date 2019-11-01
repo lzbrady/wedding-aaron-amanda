@@ -23,17 +23,16 @@ class Countdown extends React.Component {
       <div
         style={{
           textAlign: "center",
-          color: "#520106",
+          color: "#de98b2",
           display: "inline-block",
           fontSize: "2rem",
-          fontFamily: '"Lobster", cursive',
+          fontFamily: '"Raleway", sans-serif',
         }}
       >
         <CountUp
           start={0}
           end={this.state.daysRemaining}
-          prefix="&#9829; "
-          suffix=" Days Until The Big Day &#9829;"
+          suffix=" Days Until The Big Day"
         />
       </div>
     )

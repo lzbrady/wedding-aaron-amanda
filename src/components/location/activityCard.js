@@ -2,63 +2,67 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
 
-import Clock from "../../svgs/clock.svg"
-import House from "../../svgs/house.svg"
+import Outdoors from "../../svgs/outdoors.svg"
+import Bags from "../../svgs/bags.svg"
 import Info from "../../svgs/info.svg"
-import Location from "../../svgs/location.svg"
+import Dining from "../../svgs/dining.svg"
 
-const ActivityCard = ({ children, site, icon }) => (
-  <CardContainer>
-    <a href="https://www.visitgalena.org/things-to-do/outdoor-recreation/">
-      <Card>{getCardIcon({ icon })}</Card>
-    </a>
+import commonStyles from "../../styles/common.module.css"
+
+const ActivityCard = ({ title, link, icon }) => (
+  <CardContainer href={link} target="_blank" rel="noopener noreferrer">
+    <CardTitle className={commonStyles.accentText}>{title}</CardTitle>
+    <Card>{getCardIcon({ icon })}</Card>
   </CardContainer>
 )
 
 function getCardIcon({ icon }) {
   switch (icon) {
-    case "clock":
-      return <Clock style={{ marginBottom: "25px" }} />
-    case "house":
-      return <House />
-    case "info":
-      return <Info />
-    case "location":
-      return <Location />
+    case "outdoors":
+      return <Outdoors />
+    case "bags":
+      return <Bags />
+    case "dining":
+      return <Dining />
     default:
       return <Info />
   }
 }
 
-const CardContainer = styled.div`
+const CardContainer = styled(props => <a {...props} />)`
   border: 1px solid #eee;
   border-radius: 100%;
-  background: silver;
+  width: 175px;
+  height: 175px;
   transition: all 300ms ease-in-out;
-  width: 150px;
-  height: 150px;
   margin: 25px;
   position: relative;
+  text-decoration: none;
 
   :hover {
-    box-shadow: 0 0 15px #dedede;
+    box-shadow: 0 0 15px rgba(151, 190, 197, 0.58);
   }
+`
+
+const Card = styled.div`
+  text-align: center;
 `
 
 const CardChildren = styled.div`
   color: #808080;
 `
 
-const Card = styled.div`
-  position: absolute;
-  top: calc(50% - 25px);
-  left: calc(50% - 25px);
-  text-align: center;
+const CardTitle = styled.p`
+  color: #6e8b85;
+  text-decoration: none;
+  margin: 15px auto 0px;
+  font-size: 24px;
+  font-weight: lighter;
 `
 
 ActivityCard.propTypes = {
-  children: PropTypes.node.isRequired,
-  site: PropTypes.string,
+  title: PropTypes.string,
+  link: PropTypes.string,
   icon: PropTypes.string,
 }
 

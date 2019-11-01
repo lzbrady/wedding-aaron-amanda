@@ -87,6 +87,7 @@ const BlockContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-width: 960px;
 `
 
 const Title = styled.h1`

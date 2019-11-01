@@ -65,6 +65,7 @@ const FooterItem = styled.p`
     font-size: 2rem;
     font-style: italic;
     margin-bottom: 20px;
+    font-family: "Cookie", cursive;
   }
 `
 

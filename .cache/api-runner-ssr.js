@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('C:/Users/Luke/Documents/GitHub/PrettyGood/wedding-aaron-amanda/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('C:/Users/Luke/Documents/GitHub/PrettyGood/wedding-aaron-amanda/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
