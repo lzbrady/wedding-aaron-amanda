@@ -51,7 +51,6 @@ const IndexPage = () => (
                 <BlockContainer>
                   <InfoCard title="When" icon="clock">
                     <p>Sept. 6th, 2020</p>
-                    <p>6:00pm</p>
                   </InfoCard>
 
                   <InfoCard title="Where" icon="location">
