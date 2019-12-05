@@ -59,7 +59,7 @@ const AccentWall = props => (
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundAttachment:
-                window.innerWidth < 600 ? "scroll" : "fixed",
+                window && window.innerWidth < 600 ? "scroll" : "fixed",
             }}
           >
             <p className={commonStyles.textOverlay}>{props.text}</p>
