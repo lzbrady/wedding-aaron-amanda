@@ -30,6 +30,9 @@ class Menu extends React.Component {
           <MenuLink to="/registry/">
             Registry
           </MenuLink>
+          <MenuLink to="/faq/">
+            FAQ
+          </MenuLink>
           <MenuLink to="/gallery/">
             Gallery
           </MenuLink>
