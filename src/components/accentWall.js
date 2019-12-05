@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import BackgroundImage from "gatsby-background-image"
+import styled from "styled-components"
 
 import commonStyles from "../styles/common.module.css"
 
@@ -58,8 +59,7 @@ const AccentWall = props => (
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundAttachment:
-                window && window.innerWidth < 600 ? "scroll" : "fixed",
-            }}
+                window.innerWidth < 600 ? "scroll" : "fixed",
             }}
           >
             <p className={commonStyles.textOverlay}>{props.text}</p>
