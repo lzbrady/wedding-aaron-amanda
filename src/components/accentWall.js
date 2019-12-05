@@ -51,16 +51,7 @@ const AccentWall = props => (
             Tag="section"
             fluid={imageData}
             backgroundColor={`#040e18`}
-            style={{
-              height: "50vh",
-              width: "100%",
-              opacity: "0.6",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundAttachment:
-                window && window.innerWidth < 600 ? "scroll" : "fixed",
-            }}
+            className={commonStyles.bgImage}
           >
             <p className={commonStyles.textOverlay}>{props.text}</p>
           </BackgroundImage>
