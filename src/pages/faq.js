@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,7 +16,7 @@ const Faq = () => {
       <StaticQuery
         query={graphql`
           query {
-            desktop: file(relativePath: { eq: "bg/accent3-bg.jpg" }) {
+            desktop: file(relativePath: { eq: "bg/accent2-bg.jpg" }) {
               childImageSharp {
                 fluid(quality: 90, maxWidth: 4160) {
                   ...GatsbyImageSharpFluid_withWebp

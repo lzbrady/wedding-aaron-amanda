@@ -24,6 +24,7 @@ class Question extends React.Component {
             <AnswerText> {this.props.answer}</AnswerText>
           </Answer>
         )}
+        {!this.state.expanded && <ExpandIcon>+</ExpandIcon>}
       </QuestionDropdown>
     )
   }
@@ -35,6 +36,7 @@ const QuestionDropdown = styled.div`
   text-align: start;
   box-sizing: border-box;
   padding-top: 20px;
+  position: relative;
 
   :hover {
     background-color: white;
@@ -47,6 +49,15 @@ const QuestionDropdown = styled.div`
       color: black;
     }
   }
+`
+
+const ExpandIcon = styled.p`
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 0px 10px;
+  font-size: 32px;
+  color: #d2d2d2;
 `
 
 const Index = styled.span`
