@@ -125,6 +125,31 @@ const LocationCards = () => (
         site="https://www.scenichideaways.com/"
         phone="608-778-7742"
       ></InfoCard>
+
+      <InfoCard
+        title="Holiday Inn Dubuque"
+        icon="house"
+        site="https://www.ihg.com/holidayinn/hotels/us/en/dubuque/dbqia/hoteldetail?cm_mmc=GoogleMaps-_-HI-_-US-_-DBQIA"
+        phone="563-556-2000"
+      >
+        <AddressLabel>Address</AddressLabel>
+        <a
+          href="https://goo.gl/maps/xNwYv8BMEF8VMmaC6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={commonStyles.link}
+        >
+          450 Main St Dubuque, IA 52001
+        </a>
+        <br />
+        <br />
+        <AddressLabel>
+          <em>
+            Minimal rooms blocked; ask for “Sixt - Bartee Wedding Block” room
+            block for best rates
+          </em>
+        </AddressLabel>
+      </InfoCard>
     </OptionsWrapper>
   </GuestAccomodationsWrapper>
 )
