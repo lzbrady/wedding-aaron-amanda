@@ -48,7 +48,7 @@ const Faq = () => {
               }}
             >
               <Layout>
-                <SEO title="Registry" />
+                <SEO title="FAQ" />
                 <div className={commonStyles.fadedContainer}>
                   <h1 className={commonStyles.pageTitle}>FAQ</h1>
                   {questions.map((question, index) => (
