@@ -42,7 +42,7 @@ const Registry = () => (
                 <h1 className={commonStyles.pageTitle}>Our Registry</h1>
                 <p>
                   We know for some of you this is a bit of a hike, and want to
-                  ensure you that your presence at our wedding is the best gift
+                  assure you that your presence at our wedding is the best gift
                   you could give us.
                 </p>
                 <p>
