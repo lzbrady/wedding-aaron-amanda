@@ -33,7 +33,7 @@ const PersonName = styled.p`
 `
 
 const PersonTitle = styled.p`
-  color: grey;
+  color: rgb(110,139,133);
   padding-left: 5px;
 `
 
