@@ -55,7 +55,7 @@ const CardContainer = styled.div`
   transition: all 300ms ease-in-out;
   width: 31%;
   margin: 20px 1%;
-  min-width: 300px;
+  min-width: 275px;
   display: flex;
   position: relative;
   flex-wrap: wrap;
