@@ -80,6 +80,7 @@ const ExternalButton = styled.button`
   border-radius: 5px;
   transition: all 100ms linear;
   border: none;
+  box-shadow: 0px 2px 4px rgba(81, 124, 132, 0.8);
 
   a {
     color: white;
@@ -87,8 +88,9 @@ const ExternalButton = styled.button`
   }
 
   :hover {
-    box-shadow: 0 2px 4px #787878;
     cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(151, 190, 197, 0.4);
+    background-color: #7eb6bf;
   }
 `
 

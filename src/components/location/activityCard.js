@@ -34,13 +34,15 @@ const CardContainer = styled(props => <a {...props} />)`
   border-radius: 100%;
   width: 175px;
   height: 175px;
-  transition: all 300ms ease-in-out;
+  transition: all 100ms ease-in-out;
   margin: 25px;
   position: relative;
   text-decoration: none;
+  box-shadow: 0px 2px 4px rgba(151, 190, 197, 0.4);
 
   :hover {
-    box-shadow: 0 0 15px rgba(151, 190, 197, 0.58);
+    box-shadow: 0px 0px 2px rgba(151, 190, 197, 0.4);
+    background-color: rgba(151, 190, 197, 0.1);
   }
 `
 

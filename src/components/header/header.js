@@ -72,10 +72,6 @@ const StyledHeader = styled.header`
     margin: 0px;
     text-align: left;
   }
-
-  div {
-    text-align: right;
-  }
 `
 
 const menuLinkStyle = css`

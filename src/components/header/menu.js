@@ -18,24 +18,14 @@ class Menu extends React.Component {
       <MenuContainer>
         <MenuButton onClick={() => this.setState({ open: !this.state.open })}>
           {!this.state.open && <MenuOpen />}
-          {this.state.open && <MenuClose>X</MenuClose>}
+          {this.state.open && <MenuClose>MenuClose</MenuClose>}
         </MenuButton>
         <MenuItems open={this.state.open ? 1 : 0}>
-          <MenuLink to="/">
-            Home
-          </MenuLink>
-          <MenuLink to="/location/">
-            Location
-          </MenuLink>
-          <MenuLink to="/registry/">
-            Registry
-          </MenuLink>
-          <MenuLink to="/faq/">
-            FAQ
-          </MenuLink>
-          <MenuLink to="/gallery/">
-            Gallery
-          </MenuLink>
+          <MenuLink to="/">Home</MenuLink>
+          <MenuLink to="/location/">Location</MenuLink>
+          <MenuLink to="/registry/">Registry</MenuLink>
+          <MenuLink to="/faq/">FAQ</MenuLink>
+          <MenuLink to="/gallery/">Gallery</MenuLink>
         </MenuItems>
       </MenuContainer>
     )
@@ -68,12 +58,12 @@ const MenuOpen = styled(props => <MenuIcon {...props} />)`
 
   :hover {
     cursor: pointer;
-    background-color: #efd3d7;
+    background-color: #96bdc4;
   }
 `
 
 const MenuClose = styled.p`
-  color: black;
+  color: white;
   position: absolute;
   top: 3px;
   right: 6px;
@@ -81,10 +71,7 @@ const MenuClose = styled.p`
   font-size: 20px;
   font-weight: bold;
   border-radius: 100%;
-  width: 43px;
-  height: 43px;
   text-align: center;
-  line-height: 41px;
   font-size: 30px;
   font-family: sans-serif;
   font-weight: 100;
@@ -92,23 +79,22 @@ const MenuClose = styled.p`
 
   :hover {
     cursor: pointer;
-    background: #efd3d7;
+    background: #96bdc4;
   }
 `
 
 const MenuItems = styled.div`
   @media (max-width: 768px) {
     position: fixed;
-    background-color: #efd3d7;
-    top: 0;
-    padding-top: calc(7.5vh + 35px);
+    background-color: rgb(110, 139, 133);
+    padding: calc(7.5vh + 35px) 0 2px;
     height: 100vh;
-    width: 30%;
-    min-width: 200px;
+    width: 100%;
     border-right: none;
     z-index: 100;
     transition: all 200ms linear;
-    right: ${props => (props.open ? "0%" : "-100%")};
+    top: ${props => (props.open ? "0%" : "-100%")};
+    left: 0;
   }
 `
 
@@ -130,10 +116,16 @@ const menuLinkStyle = css`
     border-radius: 9px;
     border: none;
   }
+
   @media (max-width: 768px) {
     color: black;
     background-color: white;
-    border: 1px solid #efd3d7;
+    border: 1px solid rgb(110, 139, 133);
+
+    :hover {
+      border-radius: 0px;
+      border: 1px solid rgb(110, 139, 133);
+    }
   }
 `
 

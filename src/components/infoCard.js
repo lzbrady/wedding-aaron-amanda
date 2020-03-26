@@ -13,7 +13,9 @@ const InfoCard = ({ children, title, site, phone, icon }) => (
   <CardContainer>
     <Card>
       {getCardIcon({ icon })}
-      <p className={commonStyles.accentText}>{title}</p>
+      <p className={commonStyles.accentText} style={{ fontSize: "20px" }}>
+        {title}
+      </p>
       <CardChildren>{children}</CardChildren>
     </Card>
     <CardFooter>
@@ -53,7 +55,7 @@ const CardContainer = styled.div`
   transition: all 300ms ease-in-out;
   width: 31%;
   margin: 20px 1%;
-  min-width: 200px;
+  min-width: 300px;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -64,9 +66,6 @@ const Card = styled.div`
   padding: 50px 20px 20px;
   text-align: center;
   width: 100%;
-  /* :hover {
-    box-shadow: 0 0 15px #dedede;
-  } */
 `
 
 const CardFooter = styled.div`
@@ -79,13 +78,15 @@ const CardFooterContent = styled.a`
   padding: 7px;
   text-decoration: none;
   border-radius: 13px;
-  margin: 5px;
+  margin: 10px 5px;
   color: white;
   transition: all 100ms linear;
+  box-shadow: 0px 2px 4px rgba(81, 124, 132, 0.8);
 
   :hover {
     cursor: pointer;
-    box-shadow: 0 2px 4px #787878;
+    box-shadow: 0px 0px 2px rgba(151, 190, 197, 0.4);
+    background-color: #7eb6bf;
   }
 `
 

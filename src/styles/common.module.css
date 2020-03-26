@@ -46,12 +46,12 @@
 
 .textOverlay {
   position: absolute;
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   background: rgba(239, 211, 215, 0.65);
   color: black;
   padding: 5px;
-  top: 29vh;
+  top: 24vh;
   left: 0;
   right: 0;
   font-family: "Cookie", cursive;

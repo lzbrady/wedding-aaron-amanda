@@ -31,6 +31,7 @@ class Question extends React.Component {
 }
 
 const QuestionDropdown = styled.div`
+  border: 1px solid transparent;
   border-bottom: 1px solid #d2d2d2;
   padding: 10px;
   text-align: start;
@@ -41,7 +42,6 @@ const QuestionDropdown = styled.div`
   :hover {
     background-color: white;
     border: 1px solid #d2d2d2;
-    border-radius: 13px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
     cursor: pointer;
 
