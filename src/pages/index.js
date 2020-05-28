@@ -50,7 +50,7 @@ const IndexPage = () => (
                 <AccentWall imageNum={2} text="Wedding Information" />
                 <BlockContainer>
                   <InfoCard title="When" icon="clock">
-                    <p>Sept. 6th, 2020</p>
+                    <p>July 4th, 2021</p>
                     <p>Ceremony is at 4:30pm</p>
                   </InfoCard>
 

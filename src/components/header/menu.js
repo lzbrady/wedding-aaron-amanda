@@ -18,7 +18,7 @@ class Menu extends React.Component {
       <MenuContainer>
         <MenuButton onClick={() => this.setState({ open: !this.state.open })}>
           {!this.state.open && <MenuOpen />}
-          {this.state.open && <MenuClose>MenuClose</MenuClose>}
+          {this.state.open && <MenuClose>Close</MenuClose>}
         </MenuButton>
         <MenuItems open={this.state.open ? 1 : 0}>
           <MenuLink to="/">Home</MenuLink>

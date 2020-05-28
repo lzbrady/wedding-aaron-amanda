@@ -9,7 +9,6 @@ class Header extends React.Component {
     super(props)
 
     this.state = {
-      bgColor: "rgba(255, 255, 255, 0)",
       shadowColor: "rgba(0, 0, 0, 0)",
     }
 
@@ -19,12 +18,10 @@ class Header extends React.Component {
   scrollListener() {
     if (window.scrollY > 20) {
       this.setState({
-        bgColor: "rgba(255, 255, 255, 1)",
         shadowColor: "rgba(0, 0, 0, 0.1)",
       })
     } else {
       this.setState({
-        bgColor: "rgba(255, 255, 255, 0)",
         shadowColor: "rgba(0, 0, 0, 0)",
       })
     }
@@ -65,7 +62,7 @@ const StyledHeader = styled.header`
   width: 100%;
   top: 0;
   left: 0;
-  /* height: 15vh; */
+  height: 64px;
   align-items: center;
 
   h1 {

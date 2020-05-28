@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import Header from "./header/header"
+import AnnouncementBanner from "./AnnouncementBanner"
 import "./layout.css"
 
 const Layout = ({ children, constrainWidth }) => {
@@ -23,6 +24,8 @@ const Layout = ({ children, constrainWidth }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <AnnouncementBanner isHtml message="<strong>Update:</strong> Our wedding date has been postponed until <strong>July 4th, 2021</strong>. Thank you for your understanding." />
+
       <div
         style={{
           margin: `0 auto`,
@@ -59,8 +62,6 @@ const StyledFooter = styled.footer`
 `
 
 const FooterItem = styled.p`
-  margin: 0px;
-
   :nth-child(1) {
     font-size: 2rem;
     font-style: italic;
