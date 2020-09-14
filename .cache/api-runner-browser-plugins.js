@@ -1,4 +1,4 @@
 module.exports = [{
-      plugin: require('C:/Users/Luke/Documents/GitHub/PrettyGood/wedding-aaron-amanda/gatsby-browser.js'),
+      plugin: require('/Users/luke/Documents/Github/wedding-aaron-amanda/gatsby-browser.js'),
       options: {"plugins":[]},
     }]
