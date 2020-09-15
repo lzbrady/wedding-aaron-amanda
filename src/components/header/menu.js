@@ -47,7 +47,7 @@ const MenuButton = styled.button`
   font-variant-caps: petite-caps;
   z-index: 200;
 
-  @media (min-width: 768px) {
+  @media (min-width: 798px) {
     display: none;
   }
 `
@@ -85,7 +85,7 @@ const MenuClose = styled.p`
 `
 
 const MenuItems = styled.div`
-  @media (max-width: 768px) {
+  @media (max-width: 798px) {
     position: fixed;
     background-color: rgb(110, 139, 133);
     padding: calc(7.5vh + 35px) 0 2px;
@@ -118,7 +118,7 @@ const menuLinkStyle = css`
     border: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 798px) {
     color: black;
     background-color: white;
     border: 1px solid rgb(110, 139, 133);
@@ -133,7 +133,7 @@ const menuLinkStyle = css`
 const MenuLink = styled(props => <Link {...props} />)`
   ${menuLinkStyle}
 
-  @media (max-width: 768px) {
+  @media (max-width: 798px) {
     display: block !important;
   }
 `

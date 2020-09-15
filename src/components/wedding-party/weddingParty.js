@@ -81,7 +81,7 @@ const WeddingPartyWrapper = styled.div`
   margin: 20px;
   display: inline-block;
 
-  @media (max-width: 768px) {
+  @media (max-width: 750px) {
     width: calc(100% - 40px);
     flex-direction: column;
   }

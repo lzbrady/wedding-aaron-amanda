@@ -13,12 +13,12 @@ const Video = () => {
       <div>
         <h1 className={commonStyles.pageTitle}>Our Wedding Video</h1>
 
-        <video width="750" height="500" controls>
-          <source
-            src="https://aaron-and-amanda.s3.amazonaws.com/video/Aaron+and+Amanda+Wedding+Video.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=1RfiO0_PxOc&feature=youtu.be"
+          controls
+          width="100%"
+          style={{ margin: "auto", maxWidth: "640px" }}
+        />
       </div>
     </Layout>
   )
