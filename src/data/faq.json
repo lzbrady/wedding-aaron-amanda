@@ -38,5 +38,33 @@
   {
     "question": "Are you registered? Where?",
     "answer": "Visit the \"Registry\" tab to see where we are registered! We thank you for adding to our future home!"
+  },
+  {
+    "question": "How many guests will be attending?",
+    "answer": "We will be monitoring the COVID cases prior to sending on invitations to ensure our guest count complies with regulations. However, our venue can accommodate 240 guests while being able to social distance."
+  },
+  {
+    "question": "Will the ceremony and reception be indoors or outdoors?",
+    "answer": "Weather permitting, our ceremony will be outdoors and our reception will be indoors. If you feel more comfortable being outside throughout the whole event, there is a large patio area outside."
+  },
+  {
+    "question": "Will you encourage social distancing?",
+    "answer": "Yes. All tables for the reception will be placed 6 ft apart and the seating arrangements will be by household as much as possible. There will also be markers placed on the dance floor as a visual reminder to distance."
+  },
+  {
+    "question": "How will food and drinks be served?",
+    "answer": "Food will be served plated style to ensure safety. Desserts will be self-serve but will all be individually packaged. For the first round of drinks during cocktail hour, staff will come around to each table to get drink orders to ensure large lines do not form at the bar. After the first round is served, guests are welcome to go up to the bar."
+  },
+  {
+    "question": "Are masks required?",
+    "answer": "Yes! Masks must be worn at all times during the ceremony and reception unless seated at a table. "
+  },
+  {
+    "question": "Will there be any high-risk guests?",
+    "answer": "Due to the nature of a wedding, there will likely be high-risk guests attending. If you consider yourself to be high-risk, we highly encourage you to be vaccinated two weeks prior to attending. For all guests, if at any point in time you feel sick or believe you may have been exposed to COVID-19, please do NOT attend our wedding and let us know at your earliest convenience."
+  },
+  {
+    "question": "Will you be live streaming?",
+    "answer": "Likely yes! We are still unsure of the logistics around this option but plan on providing it."
   }
 ]
