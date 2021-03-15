@@ -77,8 +77,8 @@ const CardFooterContent = styled.a`
   background: #96bdc4;
   padding: 7px;
   text-decoration: none;
-  border-radius: 13px;
-  margin: 10px 5px;
+  border-radius: 5px;
+  margin: 10px;
   color: white;
   transition: all 100ms linear;
   box-shadow: 0px 2px 4px rgba(81, 124, 132, 0.8);

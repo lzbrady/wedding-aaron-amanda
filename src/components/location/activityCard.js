@@ -6,6 +6,7 @@ import Outdoors from "../../svgs/outdoors.svg"
 import Bags from "../../svgs/bags.svg"
 import Info from "../../svgs/info.svg"
 import Dining from "../../svgs/dining.svg"
+import Drinks from "../../svgs/drinks.svg"
 
 import commonStyles from "../../styles/common.module.css"
 
@@ -19,11 +20,13 @@ const ActivityCard = ({ title, link, icon }) => (
 function getCardIcon({ icon }) {
   switch (icon) {
     case "outdoors":
-      return <Outdoors />
+      return <Outdoors width={75} height={75} />
     case "bags":
-      return <Bags />
+      return <Bags width={90} height={90} />
     case "dining":
-      return <Dining />
+      return <Dining width={95} height={95} />
+    case "drinks":
+      return <Drinks width={80} height={80} />
     default:
       return <Info />
   }
@@ -32,10 +35,10 @@ function getCardIcon({ icon }) {
 const CardContainer = styled(props => <a {...props} />)`
   border: 1px solid #eee;
   border-radius: 100%;
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   transition: all 100ms ease-in-out;
-  margin: 25px;
+  margin: 10px;
   position: relative;
   text-decoration: none;
   box-shadow: 0px 2px 4px rgba(151, 190, 197, 0.4);
@@ -48,10 +51,6 @@ const CardContainer = styled(props => <a {...props} />)`
 
 const Card = styled.div`
   text-align: center;
-`
-
-const CardChildren = styled.div`
-  color: #808080;
 `
 
 const CardTitle = styled.p`

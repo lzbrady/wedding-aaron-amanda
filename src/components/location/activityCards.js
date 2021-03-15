@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 import ActivityCard from "./activityCard"
-import InfoCard from "../infoCard"
 
 import commonStyles from "../../styles/common.module.css"
 
@@ -14,18 +13,23 @@ const ActivityCards = () => (
     <OptionsWrapper>
       <ActivityCard
         title="Outdoors"
-        link="https://www.visitgalena.org/things-to-do/outdoor-recreation/"
+        link="https://www.visitgalena.org/Things-To-Do/Outdoor-Activity"
         icon="outdoors"
       />
       <ActivityCard
         title="Shopping"
-        link="https://www.visitgalena.org/things-to-do/shopping/"
+        link="https://www.visitgalena.org/things-to-do/shopping"
         icon="bags"
       />
       <ActivityCard
         title="Dining"
-        link="https://www.visitgalena.org/things-to-do/cuisine/"
+        link="https://www.visitgalena.org/Food-and-Drink/Food-and-Drink-Venues"
         icon="dining"
+      />
+      <ActivityCard
+        title="Drinks"
+        link="https://www.visitgalena.org/Food-and-Drink/Wine-Beer-Spirits"
+        icon="drinks"
       />
     </OptionsWrapper>
     <SeeAllButton
@@ -52,13 +56,6 @@ const OptionsTitle = styled.h3`
   margin-top: 40px;
 `
 
-const GuestAccomodationContainer = styled.div`
-  border: 1px solid black;
-`
-const AddressLabel = styled.p`
-  margin-bottom: 0px;
-`
-
 const SeeAllButton = styled.a`
   display: block;
   background: #96bdc4;
@@ -66,7 +63,7 @@ const SeeAllButton = styled.a`
   width: 175px;
   text-decoration: none;
   border-radius: 13px;
-  margin: 5px auto;
+  margin: 20px auto 0px;
   transition: all 100ms linear;
   border: none;
   text-decoration: none;

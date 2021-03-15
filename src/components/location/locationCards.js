@@ -168,9 +168,6 @@ const OptionsTitle = styled.h3`
   margin-top: 40px;
 `
 
-const GuestAccomodationContainer = styled.div`
-  border: 1px solid black;
-`
 const AddressLabel = styled.p`
   margin-bottom: 0px;
 `
