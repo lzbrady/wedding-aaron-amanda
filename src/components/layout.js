@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
 import Header from "./header/header"
@@ -24,7 +24,10 @@ const Layout = ({ children, constrainWidth }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <AnnouncementBanner isHtml message="<strong>Update:</strong> Our wedding date has been postponed until <strong>July 4th, 2021</strong>. Thank you for your understanding." />
+      <AnnouncementBanner
+        isHtml
+        message="Please view our COVID policies and procedures. >"
+      />
 
       <div
         style={{
@@ -37,6 +40,17 @@ const Layout = ({ children, constrainWidth }) => {
         <main>{children}</main>
         <StyledFooter>
           <FooterItem>Thank you for joining us</FooterItem>
+
+          <MenuItems>
+            <MenuLink to="/">Home</MenuLink>
+            <MenuLink to="/location/">Location</MenuLink>
+            <MenuLink to="/registry/">Registry</MenuLink>
+            <MenuLink to="/faq/">FAQ</MenuLink>
+            <MenuLink to="/gallery/">Gallery</MenuLink>
+            <MenuLink to="/video/">Video</MenuLink>
+            <MenuLink to="/covid/">COVID-19</MenuLink>
+          </MenuItems>
+
           <FooterItem style={{ fontSize: "12px" }}>
             © {new Date().getFullYear()}, Created with &#9829; by{" "}
             <FooterLink href="https://pgmediasolutions.com">
@@ -75,6 +89,32 @@ const FooterLink = styled.a`
 
   :hover {
     color: #cccccc;
+  }
+`
+
+const MenuItems = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px 0px 48px 0px;
+`
+
+const MenuLink = styled(props => <Link {...props} />)`
+  color: white;
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  transition: all 100ms linear;
+
+  :hover {
+    color: #cccccc;
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
   }
 `
 

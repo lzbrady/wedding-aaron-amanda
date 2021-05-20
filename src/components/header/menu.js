@@ -3,7 +3,6 @@ import React from "react"
 import styled, { css } from "styled-components"
 
 import MenuIcon from "../../svgs/menuIcon.svg"
-
 class Menu extends React.Component {
   constructor(props) {
     super(props)
@@ -27,6 +26,7 @@ class Menu extends React.Component {
           <MenuLink to="/faq/">FAQ</MenuLink>
           <MenuLink to="/gallery/">Gallery</MenuLink>
           <MenuLink to="/video/">Video</MenuLink>
+          <MenuLink to="/covid/">COVID-19</MenuLink>
         </MenuItems>
       </MenuContainer>
     )
@@ -47,7 +47,7 @@ const MenuButton = styled.button`
   font-variant-caps: petite-caps;
   z-index: 200;
 
-  @media (min-width: 798px) {
+  @media (min-width: 980px) {
     display: none;
   }
 `
@@ -85,7 +85,7 @@ const MenuClose = styled.p`
 `
 
 const MenuItems = styled.div`
-  @media (max-width: 798px) {
+  @media (max-width: 980px) {
     position: fixed;
     background-color: rgb(110, 139, 133);
     padding: calc(7.5vh + 35px) 0 2px;
@@ -118,7 +118,7 @@ const menuLinkStyle = css`
     border: none;
   }
 
-  @media (max-width: 798px) {
+  @media (max-width: 980px) {
     color: black;
     background-color: white;
     border: 1px solid rgb(110, 139, 133);
@@ -133,7 +133,7 @@ const menuLinkStyle = css`
 const MenuLink = styled(props => <Link {...props} />)`
   ${menuLinkStyle}
 
-  @media (max-width: 798px) {
+  @media (max-width: 980px) {
     display: block !important;
   }
 `
