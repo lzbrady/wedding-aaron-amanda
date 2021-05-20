@@ -24,10 +24,12 @@ const Layout = ({ children, constrainWidth }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <AnnouncementBanner
-        isHtml
-        message="Please view our COVID policies and procedures. >"
-      />
+      <Link to="/covid/">
+        <AnnouncementBanner
+          isLink
+          message="Please view our COVID policies and procedures >"
+        />
+      </Link>
 
       <div
         style={{

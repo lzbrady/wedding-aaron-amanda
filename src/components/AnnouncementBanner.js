@@ -22,8 +22,14 @@ const Banner = styled.div`
   background-color: #df9db6;
   padding: 10px;
   text-align: center;
+
+  :hover {
+    background-color: #cc7898;
+  }
 `
 
 const BannerMessage = styled.p`
   margin: 0px;
+  color: black;
+  text-decoration: underline;
 `
