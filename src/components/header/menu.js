@@ -67,20 +67,18 @@ const MenuClose = styled.p`
   color: white;
   position: absolute;
   top: 3px;
-  right: 6px;
+  right: 16px;
   border: none;
-  font-size: 20px;
-  font-weight: bold;
   border-radius: 100%;
   text-align: center;
   font-size: 30px;
   font-family: sans-serif;
-  font-weight: 100;
   transition: all 200ms linear;
 
   :hover {
     cursor: pointer;
-    background: #96bdc4;
+    text-decoration: underline;
+    opacity: 0.6;
   }
 `
 
@@ -96,6 +94,7 @@ const MenuItems = styled.div`
     transition: all 200ms linear;
     top: ${props => (props.open ? "0%" : "-100%")};
     left: 0;
+    overflow-y: scroll;
   }
 `
 

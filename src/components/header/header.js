@@ -5,42 +5,11 @@ import styled, { css } from "styled-components"
 import Menu from "./menu"
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      shadowColor: "rgba(0, 0, 0, 0)",
-    }
-
-    this.scrollListener = this.scrollListener.bind(this)
-  }
-
-  scrollListener() {
-    if (window.scrollY > 20) {
-      this.setState({
-        shadowColor: "rgba(0, 0, 0, 0.1)",
-      })
-    } else {
-      this.setState({
-        shadowColor: "rgba(0, 0, 0, 0)",
-      })
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.scrollListener)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.scrollListener)
-  }
-
   render() {
     return (
       <StyledHeader
         style={{
           backgroundColor: "rgba(110, 139, 133, 0.93)",
-          boxShadow: `${this.state.shadowColor} 0px 4px 8px 0px`,
         }}
       >
         <h1>
