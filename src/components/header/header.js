@@ -7,11 +7,7 @@ import Menu from "./menu"
 class Header extends React.Component {
   render() {
     return (
-      <StyledHeader
-        style={{
-          backgroundColor: "rgba(110, 139, 133, 0.93)",
-        }}
-      >
+      <StyledHeader>
         <h1>
           <MenuTitle to="/">Aaron + Amanda</MenuTitle>
         </h1>
@@ -32,7 +28,9 @@ const StyledHeader = styled.header`
   top: 0;
   left: 0;
   height: 64px;
+  overflow: hidden;
   align-items: center;
+  background-color: rgba(110, 139, 133, 0.93);
 
   h1 {
     margin: 0px;

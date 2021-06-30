@@ -92,7 +92,7 @@ const MenuItems = styled.div`
     border-right: none;
     z-index: 100;
     transition: all 200ms linear;
-    top: ${props => (props.open ? "0%" : "-100%")};
+    top: ${props => (props.open ? "0%" : "-100vh")};
     left: 0;
     overflow-y: scroll;
   }
